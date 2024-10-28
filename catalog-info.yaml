@@ -9,29 +9,3 @@ spec:
   type: "documentation"
   lifecycle: "production"
   owner: "datadeling_og_distribusjon"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Group"
-metadata:
-  name: "security_champion_digitaltvillinger.github.io"
-  title: "Security Champion digitaltvillinger.github.io"
-spec:
-  type: "security_champion"
-  parent: "land_security_champions"
-  members:
-  - "tevbrasch"
-  children:
-  - "resource:digitaltvillinger.github.io"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Resource"
-metadata:
-  name: "digitaltvillinger.github.io"
-  links:
-  - url: "https://github.com/kartverket/digitaltvillinger.github.io"
-    title: "digitaltvillinger.github.io på GitHub"
-spec:
-  type: "repo"
-  owner: "security_champion_digitaltvillinger.github.io"
-  dependencyOf:
-  - "component:digitaltvillinger.github.io"
